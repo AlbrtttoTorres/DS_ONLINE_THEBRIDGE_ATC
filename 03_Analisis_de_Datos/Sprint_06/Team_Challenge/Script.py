@@ -51,8 +51,8 @@ CREATE TABLE IF NOT EXISTS Suministros (
 # Insertar datos representativos en las tablas
 # 1. Proveedores
 proveedores = [
-    (1, "Proveedor A", "Calle Falsa 123", "Ciudad A", "Provincia A"),
-    (2, "Proveedor B", "Calle Verdadera 456", "Ciudad B", "Provincia B"),
+    (1, "Recambios Martínez", "Calle Manuel Iglesias", "Santiago de Compostela", "A Coruña"),
+    (2, "Pinturas Caneda", "Rúa da Senra", "Vigo", "Pontevedra"),
 ]
 cursor.executemany("INSERT OR IGNORE INTO Proveedores VALUES (?, ?, ?, ?, ?)", proveedores)
 
@@ -60,7 +60,7 @@ cursor.executemany("INSERT OR IGNORE INTO Proveedores VALUES (?, ?, ?, ?, ?)", p
 categorias = [
     (1, "Electrónica"),
     (2, "Mecánica"),
-    (3, "Química"),
+    (3, "Pintura"),
 ]
 cursor.executemany("INSERT OR IGNORE INTO Categorias VALUES (?, ?)", categorias)
 
